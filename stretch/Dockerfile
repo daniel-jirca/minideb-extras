@@ -1,4 +1,4 @@
-FROM bitnami/minideb@sha256:6239f7652fcb30d3ffb4dcec514cbbdca9e43783ce30426e0fa229e6c3177e35
+FROM bitnami/minideb@sha256:6492b6880047b410e583cbcdd6e2c375ab0a5c814dffc5ed25ce7246d250843e
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 ENV IMAGE_OS=debian-9
 
@@ -61,7 +61,7 @@ RUN cd /tmp && \
   rm gosu.asc
 
 ENV PATH=/opt/bitnami/nami/bin:$PATH
-ENV BITNAMI_IMAGE_VERSION=stretch-r484
+ENV BITNAMI_IMAGE_VERSION=stretch-r485
 
 COPY rootfs /
 ENTRYPOINT ["/entrypoint.sh"]
