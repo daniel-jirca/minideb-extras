@@ -49,6 +49,9 @@ identify_arch() {
   case "${arch}" in
   ppc64le)
     ;; # no-op
+  armv7l)
+    arch=armhf
+    ;;
   x86_64)
     case $(identify_distro) in
     debian-8)

@@ -48,6 +48,9 @@ identify_arch() {
   x86_64)
     arch=x64
     ;;
+  armv7l)
+    arch=armv7l
+    ;;
   ppc64le)
     arch=ppc64le
     ;;
