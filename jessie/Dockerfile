@@ -1,5 +1,5 @@
-FROM bitnami/minideb@sha256:8f8563f1ae55cba49cdd083edc7e349392fa76116664ad6af1af79224d92b6c1
-LABEL maintainer "Bitnami <containers@bitnami.com>"
+FROM thenoots/arm-bitnami-minideb:latest
+LABEL maintainer "Daniel Jirca <daniel.jirca@gmail.com"
 
 RUN install_packages curl ca-certificates sudo locales procps libaio1 && \
   update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX && \

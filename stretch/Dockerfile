@@ -1,5 +1,5 @@
-FROM bitnami/minideb@sha256:99398a0e5891a0e11d86a07b8910743cc5a22cb0863ca71c2fbba5cbfa1d6f50
-LABEL maintainer "Bitnami <containers@bitnami.com>"
+FROM thenoots/arm-bitnami-minideb:stretch
+LABEL maintainer "Daniel Jirca <daniel.jirca@gmail.com"
 ENV IMAGE_OS=debian-9
 
 RUN install_packages curl ca-certificates sudo locales procps libaio1 gnupg dirmngr && \
